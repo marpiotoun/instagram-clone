@@ -3,9 +3,7 @@ import { GraphQLServer } from "graphql-yoga";
 import logger from "morgan";
 import schema from "./schema";
 import "./passport";
-import passport from "passport";
 import { authenticateJwt } from "./passport";
-import { prisma } from "../generated/prisma-client";
 
 const PORT = process.env.PORT || 4000;
 
